@@ -1,4 +1,4 @@
-package com.example.eventus
+package com.example.yodadex
 
 import io.flutter.embedding.android.FlutterActivity
 

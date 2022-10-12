@@ -1,4 +1,4 @@
-import 'package:eventus/webpage.dart';
+import 'package:yodadex/webpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
