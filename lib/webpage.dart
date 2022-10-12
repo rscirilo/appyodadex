@@ -38,6 +38,9 @@ class WebpageState extends State<Webpage> {
                       //Validating the url and if is an app link, launch an external application
                       if (request.url.contains(".app.link") ||
                           request.url.contains("walletconnect") ||
+                          request.url.contains("YodaCoinSwaps") ||
+                          request.url.contains("YodaCoinSwapBrasil") ||
+                          request.url.contains("http://yodadex.finance/") ||
                           request.url.contains("trustwallet")) {
                         await launchUrlString(
                           request.url,
