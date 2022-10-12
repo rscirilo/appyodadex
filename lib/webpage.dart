@@ -34,19 +34,15 @@ class WebpageState extends State<Webpage> {
                 """);
                 },
                 navigationDelegate: (NavigationRequest request) async {
-                  if (request.url.contains("metamask.app.link")) {
-                    await launchUrlString(request.url,
-                        mode: LaunchMode.externalApplication);
-                    // print(request.url);
-                    print(
-                        "asfkasflmaskfmaksfmaskfmalsknflakj fas fakls flask flkasfsa");
-                    // _launchURL(request.url);
+                  //Validating the url and if is an app link, launch an external application
+                  if (request.url.contains(".app.link")) {
+                    await launchUrlString(
+                      request.url,
+                      mode: LaunchMode.externalApplication,
+                    );
                     return NavigationDecision.prevent;
                   } else {
-                    print("Vamos la ver ${request.url}");
-                    return NavigationDecision.prevent;
-
-                    // return NavigationDecision.navigate;
+                    return NavigationDecision.navigate;
                   }
                 },
               ),
