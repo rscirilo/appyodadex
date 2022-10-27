@@ -42,6 +42,7 @@ class WebpageState extends State<Webpage> {
                           request.url.contains("YodaCoin") ||
                           request.url.contains("Binance") ||
                           request.url.contains("binance") ||
+                          request.url.contains("safepal") ||
                           //request.url.contains("YodaCoinSwapBrasil") ||
                           //request.url.contains("YodaCoinEN") ||
                           request.url.contains("http://yodadex.finance/") ||
