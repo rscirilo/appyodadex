@@ -1,10 +1,11 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class Webpage extends StatefulWidget {
+  const Webpage({super.key});
+
   @override
   WebpageState createState() => WebpageState();
 }
@@ -37,11 +38,14 @@ class WebpageState extends State<Webpage> {
                     navigationDelegate: (NavigationRequest request) async {
                       //Validating the url and if is an app link, launch an external application
                       if (request.url.contains(".app.link") ||
-                          request.url.contains("walletconnect") ||
-                          request.url.contains("YodaCoinSwaps") ||
-                          request.url.contains("YodaCoinSwapBrasil") ||
+                          request.url.contains("connect") ||
+                          request.url.contains("YodaCoin") ||
+                          request.url.contains("Binance") ||
+                          request.url.contains("binance") ||
+                          //request.url.contains("YodaCoinSwapBrasil") ||
+                          //request.url.contains("YodaCoinEN") ||
                           request.url.contains("http://yodadex.finance/") ||
-                          request.url.contains("trustwallet")) {
+                          request.url.contains("trust")) {
                         await launchUrlString(
                           request.url,
                           mode: LaunchMode.externalApplication,

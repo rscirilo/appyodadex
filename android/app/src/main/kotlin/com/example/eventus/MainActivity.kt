@@ -1,4 +1,4 @@
-package com.example.yodadex
+package com.yodacoin.yodadex
 
 import io.flutter.embedding.android.FlutterActivity
 
